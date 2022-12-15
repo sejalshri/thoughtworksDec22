@@ -1,3 +1,5 @@
+Lab 8  Code to show difference between let, var and const
+------------
 Lab 7 - global tsc - delete (npm uninstall typescript or delete npm/*.*
          cmd>cd Day1
          c:\Day1>npm init (give inputs)
