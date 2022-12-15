@@ -1,3 +1,26 @@
+Lab 6  - Create interface Connection with open and close methods
+         Create two classes OracleConnection and SQLConnection implementing COnnection interface
+            console.log(....)
+         create an isntance of Connection interface,
+         assign it to OracleConnection and invoke open and close methods
+          
+         use a random number if number is odd create OracleConnection else SQLConnection (Java Script)
+------------
+Lab5 - Part2-Interfaces\Lab1.ts
+      interface Show {
+         print():void;
+        }
+      class Emp implements Show{
+          print(): void {
+              console.log("Emp implementing print method of Show interface")
+          }
+      }
+      var e1 = new Emp()
+      e1.print()
+      var show:Show = e1
+      show.print()
+
+-----------------
 Lab 4 -       
               create a class Emp
               Create a class EmpManager {
