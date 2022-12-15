@@ -16,3 +16,6 @@ Monolith --> Micro Services
 MEAN -> MongoDB, Express, Angular, NodeJS
 MERN -> MongoDB, Express, ReactJS, NodeJS
 -- NodeJS + Express
+
+Object Oriented Programming to Functional Programming
+
