@@ -1,3 +1,47 @@
+Lab 4 -       
+              create a class Emp
+              Create a class EmpManager {
+                     declare a empcoll as private array
+                     give 3 methods
+                            1. add emp to empcoll -> accept emp as argument, no return
+                            2. delete emp - accept a number and delete that record from empcoll -> splice (https://www.w3schools.com/jsref/jsref_obj_array.asp)
+                            3. list -. show all the recods
+              }
+              create instance of EMpManagaer 
+              add 5 emps
+              print
+              remove 3rd
+              print
+        
+Lab 3 - Create class
+       class Emp {
+           empno: number;
+           ename: string
+           salary:number
+
+           public incrSalary(percent:number) {
+               this.salary+=this.salary*percent/100
+             }
+
+         }
+       const e1 = new Emp();
+       e1.empno = 1
+       e1.ename="Aaaaa"
+       e1.salary = 10000
+       console.log(e1)
+       e1.incrSalary(20)
+       console.log(e1)
+
+
+Lab2 - create Lab2.ts
+              const names:string[] = [];
+              names.push("aaa")
+              names.push("bbb")
+              names.push("ccc")
+
+              console.log(names)
+
+
 Lab1 - cmd>npm install -g typescript 
        create C:\demo\Day1\Part1-SimpleTs 
        visual studio code -> Create Lab1.ts
