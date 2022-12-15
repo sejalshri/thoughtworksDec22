@@ -1,0 +1,18 @@
+Type of Applications
+	1. Rich Client / Desktop Application
+			Distribute executable, System Resources-> CPU/RAM/.
+	2. Thin Client / Web Application
+			No Expectations from Client - Browser + Network 
+			Round Trip
+	3. Rich Internet Applications	(RIA)
+			
+Application
+		1. Browser
+		2. Application
+		3. Mobile Devices
+
+Monolith --> Micro Services
+		
+MEAN -> MongoDB, Express, Angular, NodeJS
+MERN -> MongoDB, Express, ReactJS, NodeJS
+-- NodeJS + Express
