@@ -1,1 +1,8 @@
 Lab1 - Download nodejs -  https://nodejs.org/en/download/ 
+       Install Node
+       cmd>node 
+          interactive tool => 55+333
+                              console.log("hello")
+       
+       Install visual Studio code
+        
