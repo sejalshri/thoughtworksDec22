@@ -1,3 +1,15 @@
+Lab2 - Work with playground https://www.typescriptlang.org/play
+       Write code to declare variables
+              1. implicitly typed
+              2. Explicite typed
+              3. try Redeclare 
+              4. try assigning different types
+              5. significance of any (data type) 
+              let x:number = 30
+              let y = 300 // type is inferred
+              let z:any ="aaa"
+              z =44400
+------------
 Lab1 - Download nodejs -  https://nodejs.org/en/download/ 
        Install Node
        cmd>node 
