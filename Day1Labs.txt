@@ -1,4 +1,16 @@
-Lab2 - Work with playground https://www.typescriptlang.org/play
+Lab1 - cmd>npm install -g typescript 
+       create C:\demo\Day1\Part1-SimpleTs 
+       visual studio code -> Create Lab1.ts
+              let x:number = 30
+              let y = 300 // type is inferred
+              let z:String ="aaa"
+              z = "Fands"
+              console.log(z)
+       cmd>tsc Lab1.ts
+       cmd>node Lab1.js
+       Code - number, string, bool datatypes
+-------------
+Setup2 - Work with playground https://www.typescriptlang.org/play
        Write code to declare variables
               1. implicitly typed
               2. Explicite typed
@@ -10,7 +22,7 @@ Lab2 - Work with playground https://www.typescriptlang.org/play
               let z:any ="aaa"
               z =44400
 ------------
-Lab1 - Download nodejs -  https://nodejs.org/en/download/ 
+Setup1 - Download nodejs -  https://nodejs.org/en/download/ 
        Install Node
        cmd>node 
           interactive tool => 55+333
