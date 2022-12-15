@@ -12,7 +12,53 @@ Lab 4 -
               print
               remove 3rd
               print
-        
+        -------------
+          class Emp {
+                empno: number;
+                ename: string
+                salary:number
+
+                public incrSalary(percent:number):void {
+                    this.salary+=this.salary*percent/100
+                  }
+                public toString():string{
+                    return "\t" + this.empno + "\t" + this.ename + "\t\t" + this.salary
+                }  
+              }
+
+            class EmpManager{
+                private empcoll: Emp[] = []
+
+                public addEmp(emp: Emp) {
+                    this.empcoll.push(emp)
+                }
+
+                public deleteEmp(no: number) {
+                    this.empcoll.splice(no-1, 1)
+                }
+
+                public showEmp():void {
+                    console.log("----------------Employees List------------")
+                    this.empcoll.forEach(this.myFunction);
+                }
+                public myFunction(item, index) {      
+                      console.log(index + "\t " +item.toString() )
+                  }
+            }
+            const em1 = new EmpManager();
+
+            for (var _i = 0; _i < 5; _i++) {
+                const e1 = new Emp();
+                e1.empno = _i + 1
+                e1.ename="Nameof"+_i
+                e1.salary = (_i+1)*1000
+                em1.addEmp(e1)
+            }
+            em1.showEmp()
+            em1.deleteEmp(3)
+            em1.showEmp()
+
+        -------------
 Lab 3 - Create class
        class Emp {
            empno: number;
