@@ -19,3 +19,6 @@ MERN -> MongoDB, Express, ReactJS, NodeJS
 
 Object Oriented Programming to Functional Programming
 
+Browser -> JavaScript -> Untyped
+	MicroSoft -> TypeScript 
+		TypeScript -----Compiled(tsc)----JavaScript
