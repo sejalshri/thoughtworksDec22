@@ -1,3 +1,17 @@
+Lab 7 - global tsc - delete (npm uninstall typescript or delete npm/*.*
+         cmd>cd Day1
+         c:\Day1>npm init (give inputs)
+                  Observe package.json (No dependencies or devDependencies)
+         c:\Day1>npm install typescript --save 
+                  Observe package.json  dependencies added and node modules folder
+         c:\Day1>npm install tslint --save-dev
+                  Observe package.json  devDependencies added and node modules folder modified
+         shift both the dependencies to devDependencies (modify package.json)
+         edit package.json to include in scripts
+           "lab2": "tsc Lab2.ts && node Lab2.js"
+         c:\Day1>npm run lab2
+                  observe errors and rectify the lab2 script     
+------------
 Lab 6  - Create interface Connection with open and close methods
          Create two classes OracleConnection and SQLConnection implementing COnnection interface
             console.log(....)
