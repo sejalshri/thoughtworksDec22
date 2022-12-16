@@ -1,3 +1,18 @@
+Lab 8 - Modules
+            Create helper.ts
+                        export function add(x:number, y:number)  {
+                            return x + y;
+                        }
+                        export function sub(x:number, y:number)  {
+                            return x - y;
+                        }
+            create Lab3.ts
+                        import  { add, sub} from "./Helper"
+                        console.log("Add returned " + add(100,33))
+                        console.log("Sub returned " + sub(100,33))
+            tsc Lab3.ts Helper.ts
+         
+         Create a combined tuple as Calc with add adn sub methods and import once
 Lab7 - create a class Vehicle (engine, doors and fields)
             write two clases Car(noofdoors) and Bike(cc) (inherited from Vehicle
                         try super
