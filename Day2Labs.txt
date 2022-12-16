@@ -1,3 +1,7 @@
+Function Programming
+    https://youtu.be/bK-Tz-GLfOs
+
+/// passing array is not going to be curry impl, as single function call
 Lab 5 - Currying -> strcture
     function curry(targetFn, existingArgs) {
     console.log("in curry main function");
