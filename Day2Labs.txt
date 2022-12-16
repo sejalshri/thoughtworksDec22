@@ -1,0 +1,60 @@
+Lab3 - Modify code to support 
+
+    // Named function
+    function add(x, y) {
+        return x + y;
+    }
+    function process(int, int , function){
+      // invoke the function and print result
+    }
+
+      // Anonymous function
+    let myAdd = function (x, y) {     return x + y;   };
+    // invoke process to do +,-,*, / as operation
+      1. named function
+      2. Anonymous function
+      3. inline declare
+
+Lab2 - // Composition - whether to invoke morning or evening is decided by greet
+      /*
+      function greet(content:string){
+        morning("Vaishali")
+        console.log(content);
+      }
+      */
+      // aggregation
+      function greet(gfn: (s:string)=>void,  content:string){
+        gfn("StaticName")
+        console.log(content)
+      }
+
+      function morning(s: string) {
+        console.log("Good Morning, " + s);
+      }
+
+      function evening(s: string) {
+        console.log("Good Evening, " + s);
+      }
+
+      //morning("Vaishali")
+      greet(morning, "How are things?")
+      greet((s:string)=>console.log("in line function"),"How are things?")
+      //greeter(printToConsole);
+
+
+Lab1 - create new folder, npm init...
+  // Named function
+      function add(x, y) {
+          return x + y;
+      }
+
+        // Anonymous function
+      let myAdd = function (x, y) {     return x + y;   };
+
+      console.log(add(300,500))
+      console.log(add("aaa","bbb"))
+      console.log(add(true,true))
+
+      console.log(myAdd(10,55))
+      // array as well enum
+      // pass emp
