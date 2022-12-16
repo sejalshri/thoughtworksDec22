@@ -8,6 +8,7 @@ Lab 9 - Jasmine configuration
             c:\test1>npx tsc --init --> create tsconfig.json
             c:\test1>npm install jasmine @types/jasmine  --save-dev
             c:\test1>npm i jasmine-ts-console-reporter -D
+            c:\test1>npx jasmine init
             
             Write a simple class
                         export class MyService{
