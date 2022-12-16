@@ -1,3 +1,35 @@
+Lab 5 - Currying -> strcture
+    function curry(targetFn, existingArgs) {
+    console.log("in curry main function");
+    return function (str) {
+        console.log("in return function : " + str);
+        targetFn(str);
+    };
+    }
+    var tf = function (str) { console.log("in targetfunction " + str); };
+    curry(tf, "myarg")("a");
+
+    Modify existingArgs to Array and invoke target function multiple times
+
+
+Lab 4- closure
+    function dtor(conversionrate: number): (dl: number) => number {
+        console.log("in dtor, current conversionrate = "+ conversionrate)
+        // retaining value of x in return function
+        return function(dl: number): number {
+            console.log("in retured function, current x = " +conversionrate )    
+            return dl * conversionrate;
+        }
+    }
+
+    let x = dtor(80)
+    console.log(x(10))
+    console.log(x(20))
+    console.log(x(30))
+    console.log(x(40))
+
+
+
 Lab3 - Modify code to support 
 
     // Named function
