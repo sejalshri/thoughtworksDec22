@@ -1,5 +1,5 @@
 Lab7 - create a class Vehicle (engine, doors and fields)
-            write two clases Car(noofdoors) and Byke(cc) (inherited from Vehicle
+            write two clases Car(noofdoors) and Bike(cc) (inherited from Vehicle
                         try super
             create a static variable in vehicle as count 
                         increment it for every instance of car or bike created.
