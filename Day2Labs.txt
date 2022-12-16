@@ -1,3 +1,8 @@
+Lab6 - Create a class as Emp -> 3 private variables, empno, ename, salary 
+            constructor, public get/set methods
+            1. salaryIncr(percent)
+            2. toString -> print emp details    
+----------
 Function Programming
     https://youtu.be/bK-Tz-GLfOs
 
