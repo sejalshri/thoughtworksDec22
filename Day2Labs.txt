@@ -1,7 +1,32 @@
-Lab6 - Create a class as Emp -> 3 private variables, empno, ename, salary 
-            constructor, public get/set methods
-            1. salaryIncr(percent)
-            2. toString -> print emp details    
+Lab7 - create a class Vehicle (engine, doors and fields)
+            write two clases Car(noofdoors) and Byke(cc) (inherited from Vehicle
+                        try super
+            create a static variable in vehicle as count 
+                        increment it for every instance of car or bike created.
+Lab6 -  Create a new directory Part2-classes - Lab1.ts
+
+            Create a class as Emp -> 3 private variables, empno, ename, salary 
+            class Emp {
+                private _empNo:number;
+                private ename:string;
+                private salary:number;
+
+                constructor(empNo:number, ename:string, salary:number) {
+                    this._empNo = empNo;
+                    this.ename = ename;
+                    this.salary = salary;
+                }
+                // get/set syntax
+                get empNo() {
+                    return this._empNo;
+                  }
+                set empNo(value) {
+                    this._empNo = value;
+                  }
+            tsc gives error -> compatibility
+            Modify tsc command to include  --target es5
+            and check difference in get/set(e.empNo = 400) vs method(e.getName())
+            
 ----------
 Function Programming
     https://youtu.be/bK-Tz-GLfOs
