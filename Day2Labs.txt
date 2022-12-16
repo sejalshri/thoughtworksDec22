@@ -1,3 +1,38 @@
+Lab 9 - Jasmine configuration
+            create a new directory -> c:\test1
+            
+            c:\test1>npm init 
+                        --> create package.json
+            c:\test1>npm install typescript --save-dev 
+                        --> modify devdependencies
+            c:\test1>npx tsc --init --> create tsconfig.json
+            c:\test1>npm install jasmine @types/jasmine  --save-dev
+            c:\test1>npm i jasmine-ts-console-reporter -D
+            
+            Write a simple class
+                        export class MyService{
+                            constructor(){
+
+                            }
+                            public process(str:string){
+                                return "Processed for "+str;
+                            }
+                        }
+           Write spec/MyServiceSpec.ts
+                       import {MyService} from '../MyService'
+                        let myservice: MyService;
+                        describe("FirstTestCase",()=>{
+                            beforeEach(()=>{
+                                console.log("before each invoked ")
+                                myservice = new MyService()
+                            });
+                            it("Check if defined",()=>{
+                                expect(myservice.process("s")).toEqual("Processed for ss")
+                            })
+                        })
+            c:\test1>npx tsc
+            c:\test1>npx jasmine
+-----------            
 Lab 8 - Modules
             Create helper.ts
                         export function add(x:number, y:number)  {
