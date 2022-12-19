@@ -1,3 +1,77 @@
+Lab3 Partial Code 
+Dept.ts
+            export class Dept{
+            private deptNo:number;
+            private dname:String;
+            private dloc:String;
+
+            constructor(deptNo:number,dname:String,dloc:String){
+                this.deptNo=deptNo;
+                this.dname=dname;
+                this.dloc=dloc;
+            }
+
+            public setName(name:string){
+                this.dname=name;
+            }
+            public setdno(no:number){
+                this.deptNo=no;
+            }
+            public setdloc(loc:String){
+                this.dloc=loc;
+            }
+
+            public getName():String{
+                return this.dname;
+            }
+            public getLoc():String{
+                return this.dloc;
+            }
+            public getNo():number{
+                return this.deptNo;
+            }
+        }
+
+DeptDAO.ts
+        import { Dept } from "./dept";
+        const {  Client } = require("pg");
+        export class DeptDAO{
+            readonly client;
+            constructor(){
+                let credentials = {
+                    user: "postgres",
+                    host: "localhost",
+                // host: "postgres.cgx7wslwcmx7.us-east-1.rds.amazonaws.com",
+                    database: "postgres",
+                    password: "admin",
+                    port: 5432,
+                };
+            this.client = new Client(credentials);
+         } 
+         public async create(deptObj: Dept) {
+            await this.client.connect();
+            var query="INSERT INTO dept values("+deptObj.getNo()+",'"+deptObj.getName()+"','"+deptObj.getLoc()+"')";
+            console.log(query);
+            const now = await this.client.query(query);
+            await this.client.end();
+        }
+        }
+Index.ts
+        import { Dept } from "./dept"
+        import { DeptDAO } from "./deptDao"
+
+        const {  Client } = require("pg");
+
+        async function test(){
+          var deptObj=new Dept(5,"business","Chennai");
+          const deptdao = new DeptDAO()
+          deptdao.create(deptObj)
+        }
+        test()
+
+        //console.log (clientResult.rows[0].dname)
+
+
 Lab3 - https://www.geeksforgeeks.org/using-async-await-in-node-js/
         create two more classes and invoke the functionality from index.js
             Dept.ts
