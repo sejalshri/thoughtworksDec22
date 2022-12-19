@@ -1,0 +1,6 @@
+Lab1 - psql / pgAdmin
+      Connect to Server
+      Check ->   select version();
+      Create table in default database
+              Dept -> deptno(number) , dname(string), loc(string)
+            
