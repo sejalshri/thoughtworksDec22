@@ -1,3 +1,18 @@
+Lab3 - https://www.geeksforgeeks.org/using-async-await-in-node-js/
+        create two more classes and invoke the functionality from index.js
+            Dept.ts
+                        private fields
+                        Constructor(with out args)
+                        Constructor(with 3 args)
+                        get/set
+
+            DeptDAO.ts
+                        create(dept)
+                    //    update(dept)
+                    //    delete(deptno)
+                    //    read(print content, return dept array)
+            Modify index.ts to invoke create
+
 Lab2 - index.ts
             const {  Client } = require("pg");
 
