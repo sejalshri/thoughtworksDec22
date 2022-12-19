@@ -1,3 +1,36 @@
+Lab2 - index.ts
+            const {  Client } = require("pg");
+
+            const credentials = {
+              user: "postgres",
+              host: "localhost",
+              database: "postgres",
+              password: "admin",
+              port: 5432,
+            };
+
+
+            // Connect with a client.
+
+            async function clientDemo() {
+              const client = new Client(credentials);
+              await client.connect();
+              const now = await client.query("SELECT * from dept");
+              await client.end();
+              return now;
+            }
+
+            // Use a self-calling function so we can use async / await.
+
+            (async () => {
+              const clientResult = await clientDemo();
+              console.log("Time with client: " );
+              console.log (clientResult)
+
+            })();
+
+      -> run code, check errors and modify package.json accrodingly
+
 Lab1 - psql / pgAdmin
       Connect to Server
       Check ->   select version();
