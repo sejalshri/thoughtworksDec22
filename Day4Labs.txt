@@ -1,3 +1,13 @@
+Lab 5- same as Lab2 
+           console.log(request.url)
+           use request.url to send different pages to client
+                / -> welcome page as index.html(content)
+                /page1 -> show page1
+                /page2-> show page2
+       postman -> localhost:8080/
+                  localhost:8080/page1
+                  localhost:8080/page2
+       
 Lab 4- 
         var http = require("http")
         http.get('http://localhost:8080/aaa', (res) => {
