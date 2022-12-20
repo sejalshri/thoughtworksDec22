@@ -1,3 +1,40 @@
+Lab 6 - new folder Part2-CRUD
+           var http = require('http');
+           var url= require('url');
+           var handlerequest = function(request,response)
+               {
+                   response.writeHead(200, {'Content-Type': 'text/html'}); 
+                   //response.write("<h1>hello, ...from Node</h1>"); 
+                   //response.end();
+                   console.log("URL and Method and path  " + request.url + ", "+  request.method + ",  " + request.path);
+                   var querydata = url.parse(request.url,true).query
+                   console.log("Query ") 
+                   console.log(querydata.deptno)
+                   if(request.url == '/dept'){
+                       response.write("<h1>Dept Service</h1>"); 
+                       if ("GET"==request.method){
+                           response.write("<h1>Dept Service GET Method</h1>"); 
+                       }
+                       if ("POST"==request.method){
+                           response.write("<h1>Dept Service POST Method</h1>"); 
+                       }
+                   }else{
+                      response.status = 404
+                      // change header status 404, and return
+                      return
+                   }
+                   response.end();
+               }
+           console.log("Starting server on 8080")    
+           var server = http.createServer(handlerequest);
+           server.listen(8080);
+
+         1. Post -> accept 3 params in querystring - deptNo, dname, loc
+                           show details
+         2. Get -> Return html page for array of departments
+           
+         
+
 Lab 5- same as Lab2 
            console.log(request.url)
            use request.url to send different pages to client
